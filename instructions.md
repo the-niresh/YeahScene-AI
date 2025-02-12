@@ -57,8 +57,8 @@ The website will feature:
 
 ---
 
-### 3. Contact Page (Form Submission)
-- **Description**: A contact page where users can submit inquiries.
+### 3. Contact Section (Form Submission)
+- **Description**: A contact section below the product showcase section where users can submit inquiries.
 - **Form Fields**:
   - **Name** (text input).
   - **Mobile Number** (number input).
