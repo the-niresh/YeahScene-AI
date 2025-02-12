@@ -15,14 +15,38 @@ interface Product {
 const products: Product[] = [
   {
     id: '1',
-    title: 'AI Automation Suite',
-    description: 'Transform your business processes with our cutting-edge AI automation solutions.',
+    title: 'WiseAdvices AI',
+    description: 'AI Advices you with the best possible way and best practices on respective topics',
+    image: '/wiseadvices-landing-page.svg',
+    features: [
+      'Parenting Advices',
+      'Career Advices',
+      'Business Strategy Advices',
+      'Personal Development Advices',
+    ],
+  },
+  {
+    id: '2',
+    title: 'AI Powered CRM',
+    description: 'AI powered Customer management system with cloud database and seamless integration',
     image: '/product-automation.svg',
     features: [
-      'Intelligent Process Automation',
-      'Custom AI Models',
-      'Real-time Analytics',
-      'Seamless Integration',
+      'AI CRM Platform',
+      'AI CRM Database',
+      'AI CRM Integration',
+      'AI CRM Security',
+    ],
+  },
+  {
+    id: '3',
+    title: 'AI Powered Employee Management',
+    description: 'AI powered Employee management system with cloud database and seamless integration',
+    image: '/product-automation.svg',
+    features: [
+      'AI Employee Management Platform',
+      'AI Employee Management Suggestions',
+      'AI Employee Management Integration',
+      'AI Powered Recruiting',
     ],
   },
 ];
