@@ -25,14 +25,17 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <motion.h1 
+            <motion.h3 
               className="text-5xl md:text-6xl font-bold text-white mb-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Transform Your Ideas Into Reality
-            </motion.h1>
+              Transform Your Ideas Into Reality with
+              <span className="text-blue-600"> 
+                <h1>YeahScene AI</h1>
+              </span>
+            </motion.h3>
             <motion.p 
               className="text-xl text-gray-300 mb-8"
               initial={{ opacity: 0, y: 20 }}

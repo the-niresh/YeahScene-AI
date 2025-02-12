@@ -17,6 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "YeahScene AI - Automation Redefined",
   description: "Transform your business with our cutting-edge AI automation solutions",
+  icons: {
+    icon: "/yeahscene.svg",
+  },
 };
 
 export default function RootLayout({
