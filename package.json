@@ -12,9 +12,9 @@
     "@vercel/analytics": "^1.5.0",
     "framer-motion": "^12.4.2",
     "lucide-react": "^0.475.0",
-    "next": "15.1.7",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "next": "^15.3.8",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
     "resend": "^4.1.2",
     "sonner": "^1.7.4"
   },
