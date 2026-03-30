@@ -8,15 +8,21 @@ export async function POST(request: Request) {
   try {
     const data = await request.json();
     
+    if (!data.name || !data.email || !data.requirements) {
+      return NextResponse.json({ 
+        message: 'Missing required fields: name, email, and requirements' 
+      }, { status: 400 });
+    }
+    
     // Create the email content
     const emailContent = `
       New Contact Form Submission:
       
       Name: ${data.name}
       Email: ${data.email}
-      Mobile: ${data.mobile}
-      Company: ${data.company}
-      Budget Range: ${data.budget}
+      Mobile: ${data.mobile || 'Not provided'}
+      Company: ${data.company || 'Not provided'}
+      Budget Range: ${data.budget || 'Not provided'}
       
       Requirements:
       ${data.requirements}
