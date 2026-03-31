@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const links = [
   { label: 'Services', href: '#services' },
@@ -31,23 +32,13 @@ export default function Footer() {
         >
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div
-              className="w-7 h-7 rounded-lg flex items-center justify-center"
-              style={{
-                background: 'linear-gradient(135deg, var(--accent-gold) 0%, #9A7040 100%)',
-              }}
-            >
-              <span
-                style={{
-                  fontFamily: 'var(--font-display)',
-                  fontWeight: 800,
-                  fontSize: '0.65rem',
-                  color: '#05050D',
-                }}
-              >
-                YS
-              </span>
-            </div>
+            <Image
+              src="/yeahscene.svg"
+              alt="YeahScene AI"
+              width={28}
+              height={28}
+              className="w-7 h-7"
+            />
             <span
               className="text-white font-semibold text-sm"
               style={{ fontFamily: 'var(--font-display)' }}
