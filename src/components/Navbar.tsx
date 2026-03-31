@@ -3,6 +3,7 @@
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
 
 const navLinks = [
   { label: 'Services', href: '#services' },
@@ -47,24 +48,15 @@ export default function Navbar() {
       >
         {/* Logo */}
         <a href="#home" className="flex items-center gap-2.5 group">
-          <div
-            className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-105"
-            style={{
-              background: 'linear-gradient(135deg, var(--accent-gold) 0%, #9A7040 100%)',
-              boxShadow: '0 2px 8px rgba(200,169,110,0.3)',
-            }}
-          >
-            <span
-              style={{
-                fontFamily: 'var(--font-display)',
-                fontWeight: 800,
-                fontSize: '0.6rem',
-                color: '#05050D',
-                letterSpacing: '0.02em',
-              }}
-            >
-              YS
-            </span>
+          <div className="shrink-0 transition-transform duration-300 group-hover:scale-105">
+            <Image
+              src="/yeahscene.svg"
+              alt="YeahScene AI"
+              width={32}
+              height={32}
+              className="w-8 h-8"
+              priority
+            />
           </div>
           <span
             className="text-white font-semibold"
