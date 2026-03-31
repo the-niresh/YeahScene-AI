@@ -35,9 +35,9 @@ export default function Footer() {
             <Image
               src="/yeahscene.svg"
               alt="YeahScene AI"
-              width={28}
-              height={28}
-              className="w-7 h-7"
+              width={36}
+              height={36}
+              className="w-9 h-9"
             />
             <span
               className="text-white font-semibold text-sm"

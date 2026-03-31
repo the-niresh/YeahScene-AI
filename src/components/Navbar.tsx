@@ -52,9 +52,9 @@ export default function Navbar() {
             <Image
               src="/yeahscene.svg"
               alt="YeahScene AI"
-              width={32}
-              height={32}
-              className="w-8 h-8"
+              width={40}
+              height={40}
+              className="w-10 h-10"
               priority
             />
           </div>
